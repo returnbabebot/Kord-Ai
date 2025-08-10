@@ -225,7 +225,7 @@ cmd: "promote",
   desc: "promote a member to admin",
   fromMe: wtype,
   gc: true,
-  adminOnly: true,
+  adminOnly: false,
   type: "group",
 }, async (m, text) => {
   try {
@@ -248,7 +248,7 @@ cmd: "demote",
   desc: "demote an admin to member",
   fromMe: wtype,
   gc: true,
-  adminOnly: true,
+  adminOnly: false,
   type: "group",
 }, async (m, text) => {
   try {
@@ -348,7 +348,7 @@ cmd: "tag",
   desc: "tag all memebers/admins/me/text",
   fromMe: wtype,
   gc: true,
-  adminOnly: true,
+  adminOnly: false,
   type: "group"
 }, async (m, text, cmd, store) => {
   try {
@@ -396,7 +396,7 @@ cmd: "tagall",
   desc: "tag all memebers",
   fromMe: wtype,
   gc: true,
-  adminOnly: true,
+  adminOnly: false,
   type: "group"
 }, async (m, text) => {
   try {
